@@ -6,7 +6,7 @@ services:
     ports:
       - "8000:8000"
     env_file:
-      - .env.example
+      - .env
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
