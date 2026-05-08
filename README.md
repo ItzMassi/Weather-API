@@ -2,7 +2,7 @@
 
 A fast, containerized Python API that fetches weather data from Visual Crossing and caches results in Redis for improved performance.
 
-## 🚀 How it Works
+##  How it Works
 
 1.  **FastAPI**: A modern web framework for building APIs with Python. It handles incoming requests (like `GET /weather/London`).
 2.  **Visual Crossing API**: A 3rd party service that provides accurate weather data.
@@ -12,7 +12,7 @@ A fast, containerized Python API that fetches weather data from Visual Crossing 
     *   If not (a "cache miss"), it fetches it from Visual Crossing, saves it in Redis for 30 minutes, and then returns it.
 4.  **Docker**: Packages the application and Redis so they run identically on any machine.
 
-## 🛠️ Setup
+##  Setup
 
 ### 1. Prerequisites
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed.
@@ -36,7 +36,7 @@ docker-compose up --build
 
 The API will be available at `http://localhost:8000`.
 
-## 📡 API Endpoints
+##  API Endpoints
 
 - **Get Weather**: `GET /weather/{location}`
   - Example: `http://localhost:8000/weather/London`
